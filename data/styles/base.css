@@ -240,4 +240,10 @@ p
     -o-transition: color .3s, background-color .15s;
     transition: color .3s, background-color .15s;
     color: #1890ff;
+    -webkit-transition: color .3s, border-left-color .3s;
+    -moz-transition: color .3s, border-left-color .3s;
+    -ms-transition: color .3s, border-left-color .3s;
+    -o-transition: color .3s, border-left-color .3s;
+    transition: color .3s, border-left-color .3s;
+    border-left-color: #1890ff;
 }
