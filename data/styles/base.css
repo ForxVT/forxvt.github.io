@@ -19,14 +19,15 @@ time, mark, audio, video
 .header-container
 {
     box-shadow: 0 2px 8px #f0f1f2;
-    display: grid;
-    grid-template-columns: 20em auto;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* -- left -- */
 .header-container-left
 {
     text-align: center;
+    flex-basis: 20em;
 }
 
 .header-container-left > a
@@ -34,10 +35,29 @@ time, mark, audio, video
     line-height: 60px;
 }
 
+#title
+{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85);
+}
+
+#title:hover
+{
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    color: #1890FF;
+}
+
 /* -- right -- */
 .header-menu
 {
-    margin-left: 72em;
+    float: right;
+    margin-right: 10em;
 }
 
 .header-menu > ul > li
@@ -145,7 +165,9 @@ time, mark, audio, video
 .page
 {
     padding-left: 64px;
+    padding-right: 24px;
     padding-bottom: 144px;
+    text-align: justify;
 }
 
 h1
@@ -197,8 +219,8 @@ p
 {
     border-left: 1px solid #e8e8e8;
     padding-left: 16px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
     line-height: 18px;
     display: block;
     outline: none;
