@@ -198,13 +198,29 @@ p
     color: rgb(49, 70, 89);
 }
 
-.image-container
+.list > li > p
+{
+    list-style-type: circle;
+    list-style-position: outside;
+    margin-left: 1em;
+    display: list-item;
+}
+
+.list > li > p > a
+{
+    color: #1890ff;
+}
+
+article > a
+{
+    color: #1890ff;
+}
+
+article > .image-container
 {
     text-align: center;
     margin: 40px 0px;
 }
-
-
 
 /* -- right -- */
 .part-menu
@@ -219,6 +235,7 @@ p
 {
     border-left: 1px solid #e8e8e8;
     padding-left: 16px;
+    padding-right: 8px;
     padding-top: 2px;
     padding-bottom: 2px;
     line-height: 18px;
@@ -246,4 +263,11 @@ p
     -o-transition: color .3s, border-left-color .3s;
     transition: color .3s, border-left-color .3s;
     border-left-color: #1890ff;
+}
+
+/* ---- about ---- */
+.about
+{
+    margin-left: 2.5em;
+    max-width: 60em;
 }
