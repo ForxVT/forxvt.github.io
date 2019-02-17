@@ -1,0 +1,221 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+{
+	font-family: -apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei','Helvetica Neue',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+}
+
+/* ---- header ---- */
+.header-container
+{
+    box-shadow: 0 2px 8px #f0f1f2;
+    display: grid;
+    grid-template-columns: 20em auto;
+}
+
+/* -- left -- */
+.header-container-left
+{
+    text-align: center;
+}
+
+.header-container-left > a
+{
+    line-height: 60px;
+}
+
+/* -- right -- */
+.header-menu
+{
+    margin-left: 72em;
+}
+
+.header-menu > ul > li
+{
+    float: left;
+}
+
+.header-menu > ul > li > a
+{
+    margin-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 4px;
+    margin-right: 4px;
+    line-height: 60px;
+    display: block;
+    outline: none;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+}
+
+.header-menu > ul > li > a:hover
+{
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    color: #1890FF;
+}
+
+#header-menu-selected
+{
+    margin-top: 0px;
+    border-top: 3px solid #1890ff;
+    color: #1890ff;
+}
+
+/* ---- main ---- */
+.main-container
+{
+    padding-top: 37px;
+    display: grid;
+    grid-template-columns: 20em auto 10em;
+}
+
+/* -- left--  */
+.main-menu
+{
+    position: sticky;
+    top: 0px;
+    padding-top: 4px;
+    border-right: 1px solid #e8e8e8;
+    padding-bottom: 48px;
+}
+
+.main-menu > ul > li > a:first-child
+{
+    margin-top: 0px;
+}
+
+.main-menu > ul > li > a
+{
+    padding-left: 40px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    line-height: 40px;
+    display: block;
+    outline: none;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+}
+
+.main-menu > ul > li > a:hover
+{
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -ms-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    color: #1890FF;
+}
+
+.main-menu > ul > li > a:focus
+{
+    -webkit-transition: color .3s, background-color .15s;
+    -moz-transition: color .3s, background-color .15s;
+    -ms-transition: color .3s, background-color .15s;
+    -o-transition: color .3s, background-color .15s;
+    transition: color .3s, background-color .15s;
+    color: #1890ff;
+    background-color: #E6F7FF;
+}
+
+#main-menu-selected
+{
+    background-color: #e6f7ff;
+    border-right: 3px solid #1890ff;
+    color: #1890ff;
+}
+
+/* -- middle --  */
+.page
+{
+    padding-left: 64px;
+    padding-bottom: 144px;
+}
+
+h1
+{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(13, 26, 38);
+    line-height: 38px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+
+h2
+{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-top: 38px;
+    margin-bottom: 14px;
+    color: rgb(13, 26, 38);
+}
+
+p
+{
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 14px 0px;
+    color: rgb(49, 70, 89);
+}
+
+.image-container
+{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+
+
+/* -- right -- */
+.part-menu
+{
+    position: sticky;
+    top: 0px;
+    padding-top: 20px;
+    padding-bottom: 48px;
+}
+
+.part-menu > ul > li > a
+{
+    border-left: 1px solid #e8e8e8;
+    padding-left: 16px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    line-height: 18px;
+    display: block;
+    outline: none;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.part-menu > ul > li > a:hover
+{
+    -webkit-transition: color .3s, background-color .15s;
+    -moz-transition: color .3s, background-color .15s;
+    -ms-transition: color .3s, background-color .15s;
+    -o-transition: color .3s, background-color .15s;
+    transition: color .3s, background-color .15s;
+    color: #1890ff;
+}
