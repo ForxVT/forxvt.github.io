@@ -1,21 +1,16 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video
+/* -------------------------------- */
+/* GLOBALE                          */
+/* -------------------------------- */
+h1, h2, h3, h4, h5, h6, a, p
 {
-	font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+	font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+    text-decoration: none;
+    color: #0D1A26;
 }
 
-/* ---- header ---- */
+/* -------------------------------- */
+/* EN-TÊTE                          */
+/* -------------------------------- */
 .header-container
 {
     box-shadow: 0 2px 8px #f0f1f2;
@@ -23,7 +18,9 @@ time, mark, audio, video
     justify-content: space-between;
 }
 
-/* -- left -- */
+/* ---------------- */
+/* RANGÉE GAUCHE    */
+/* ---------------- */
 .header-container-left
 {
     text-align: center;
@@ -39,21 +36,18 @@ time, mark, audio, video
 {
     font-size: 18px;
     font-weight: 500;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.85);
+    color: #0D1A26;
 }
 
 #title:hover
 {
-    -webkit-transition: color .3s;
-    -moz-transition: color .3s;
-    -ms-transition: color .3s;
-    -o-transition: color .3s;
-    transition: color .3s;
+    transition: color 0.3s;
     color: #1890FF;
 }
 
-/* -- right -- */
+/* ---------------- */
+/* RANGÉE DROITE    */
+/* ---------------- */
 .header-menu
 {
     float: right;
@@ -67,25 +61,19 @@ time, mark, audio, video
 
 .header-menu > ul > li > a
 {
-    margin-top: 3px;
+    font-size: 14px;
     padding-left: 20px;
     padding-right: 20px;
+    margin-top: 3px;
     margin-left: 4px;
     margin-right: 4px;
     line-height: 60px;
     display: block;
     outline: none;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.85);
-    font-size: 14px;
 }
 
 .header-menu > ul > li > a:hover
 {
-    -webkit-transition: color .3s;
-    -moz-transition: color .3s;
-    -ms-transition: color .3s;
-    -o-transition: color .3s;
     transition: color .3s;
     color: #1890FF;
 }
@@ -93,11 +81,13 @@ time, mark, audio, video
 #header-menu-selected
 {
     margin-top: 0px;
-    border-top: 3px solid #1890ff;
-    color: #1890ff;
+    border-top: 3px solid #1890FF;
+    color: #1890FF;
 }
 
-/* ---- main ---- */
+/* -------------------------------- */
+/* CONTENU GUIDE                    */
+/* -------------------------------- */
 .main-container
 {
     padding-top: 37px;
@@ -105,14 +95,27 @@ time, mark, audio, video
     grid-template-columns: 20em auto 10em;
 }
 
-/* -- left--  */
+/* ---------------- */
+/* RANGÉE GAUCHE    */
+/* ---------------- */
 .main-menu
 {
+    padding-top: 4px;
+    padding-bottom: 48px;
     position: sticky;
     top: 0px;
-    padding-top: 4px;
-    border-right: 1px solid #e8e8e8;
-    padding-bottom: 48px;
+    border-right: 1px solid #E8E8E8;
+}
+
+.main-menu > ul > li > a
+{
+    font-size: 14px;
+    padding-left: 40px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    line-height: 40px;
+    display: block;
+    outline: none;
 }
 
 .main-menu > ul > li > a:first-child
@@ -120,61 +123,33 @@ time, mark, audio, video
     margin-top: 0px;
 }
 
-.main-menu > ul > li > a
-{
-    padding-left: 40px;
-    margin-top: 4px;
-    margin-bottom: 4px;
-    line-height: 40px;
-    display: block;
-    outline: none;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.85);
-    font-size: 14px;
-}
-
 .main-menu > ul > li > a:hover
 {
-    -webkit-transition: color .3s;
-    -moz-transition: color .3s;
-    -ms-transition: color .3s;
-    -o-transition: color .3s;
     transition: color .3s;
     color: #1890FF;
 }
 
 .main-menu > ul > li > a:focus
 {
-    -webkit-transition: color .3s, background-color .15s;
-    -moz-transition: color .3s, background-color .15s;
-    -ms-transition: color .3s, background-color .15s;
-    -o-transition: color .3s, background-color .15s;
     transition: color .3s, background-color .15s;
-    color: #1890ff;
+    color: #1890FF;
     background-color: #E6F7FF;
 }
 
 #main-menu-selected
 {
-    background-color: #e6f7ff;
-    border-right: 3px solid #1890ff;
-    color: #1890ff;
+    color: #1890FF;
+    background-color: #E6F7FF;
+    border-right: 3px solid #1890FF;
 }
 
-/* -- middle --  */
-.page
-{
-    padding-left: 64px;
-    padding-right: 24px;
-    padding-bottom: 144px;
-    text-align: justify;
-}
-
+/* ---------------- */
+/* RANGÉE MILIEU    */
+/* ---------------- */
 h1
 {
     font-size: 30px;
     font-weight: 500;
-    color: rgb(13, 26, 38);
     line-height: 38px;
     margin-top: 8px;
     margin-bottom: 20px;
@@ -187,7 +162,6 @@ h2
     line-height: 32px;
     margin-top: 38px;
     margin-bottom: 14px;
-    color: rgb(13, 26, 38);
 }
 
 h3
@@ -197,33 +171,6 @@ h3
     line-height: 24px;
     margin-top: 24px;
     margin-bottom: 14px;
-    color: rgb(13, 26, 38);
-}
-
-p
-{
-    font-size: 14px;
-    line-height: 28px;
-    margin-top: 14px 0px;
-    color: rgb(49, 70, 89);
-}
-
-p > a
-{
-    color: #1890ff;
-}
-
-.list > li > p
-{
-    list-style-type: circle;
-    list-style-position: outside;
-    margin-left: 1em;
-    display: list-item;
-}
-
-.list > li > p > a
-{
-    color: #1890ff;
 }
 
 h6
@@ -235,43 +182,77 @@ h6
     margin-bottom: 14px;
     margin-top: 6px;
     text-align: center;
-    color: rgb(49, 70, 89);
+    color: #314659;
 }
 
 h6 > a
 {
-    color: rgb(49, 70, 89);
+    color: #314659;
     text-decoration: underline;
+}
+
+p
+{
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 14px 0px;
+    color: #314659;
+}
+
+p > a
+{
+    color: #1890FF;
+}
+
+.page
+{
+    padding-left: 64px;
+    padding-right: 24px;
+    padding-bottom: 144px;
+    text-align: justify;
 }
 
 .image-container
 {
-    text-align: center;
     margin-top: 40px;
     margin-bottom: 6px;
+    text-align: center;
 }
 
-/* -- right -- */
+.list > li > p
+{
+    margin-left: 1em;
+    list-style-type: circle;
+    list-style-position: outside;
+    display: list-item;
+}
+
+.list > li > p > a
+{
+    color: #1890FF;
+}
+
+/* ---------------- */
+/* RANGÉE DROITE    */
+/* ---------------- */
 .part-menu
 {
-    position: sticky;
-    top: 0px;
     padding-top: 20px;
     padding-bottom: 48px;
+    position: sticky;
+    top: 0px;
 }
 
 .part-menu > ul > li > a
 {
-    border-left: 1px solid #e8e8e8;
     padding-left: 16px;
     padding-right: 8px;
     padding-top: 2px;
     padding-bottom: 2px;
+    border-left: 1px solid #E8E8E8;
     line-height: 18px;
     display: block;
     outline: none;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.85);
     font-size: 12px;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -280,21 +261,14 @@ h6 > a
 
 .part-menu > ul > li > a:hover
 {
-    -webkit-transition: color .3s, background-color .15s;
-    -moz-transition: color .3s, background-color .15s;
-    -ms-transition: color .3s, background-color .15s;
-    -o-transition: color .3s, background-color .15s;
-    transition: color .3s, background-color .15s;
-    color: #1890ff;
-    -webkit-transition: color .3s, border-left-color .3s;
-    -moz-transition: color .3s, border-left-color .3s;
-    -ms-transition: color .3s, border-left-color .3s;
-    -o-transition: color .3s, border-left-color .3s;
-    transition: color .3s, border-left-color .3s;
-    border-left-color: #1890ff;
+    transition: color .3s, background-color .15s, border-left-color .3s;
+    color: #1890FF;
+    border-left-color: #1890FF;
 }
 
-/* ---- about ---- */
+/* -------------------------------- */
+/* CONTENU À PROPOS DE              */
+/* -------------------------------- */
 .about
 {
     margin-left: 2.5em;
