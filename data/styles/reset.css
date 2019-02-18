@@ -1,9 +1,12 @@
-/* ---------------------------------------------------------------- */
-/* Le but de ce fichier est de définir des valeurs par défaut pour  */
-/* différentes propriétés des balises qui sont modifiés par les     */
-/* navigateurs et donc permettre d'unifier le style d'un site de    */
-/* manière plus sûr sur les différents navigateurs.                 */
-/* ---------------------------------------------------------------- */
+/* ----------------------------------------------------------------- */
+/* CE FICHIER N'A PAS ÉTÉ DÉVELOPPÉ PAR NOTRE GROUPE                 */
+/* ----------------------------------------------------------------- */
+/* Certains navigateurs définissent des valeurs pour les propriétés  */
+/* de certaines balises, pour éviter que cela cause des              */
+/* inconsistence de rendu du site sur les différents navigateurs,    */
+/* ce code "réinitialise" ces propriétés et on a donc préféré        */
+/* l'inclure pour éviter les inconsistences.                         */
+/* ----------------------------------------------------------------- */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -22,8 +25,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video
-{
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -31,37 +33,26 @@ time, mark, audio, video
 	font: inherit;
 	vertical-align: baseline;
 }
-
+/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section
-{
+footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
-body
-{
+body {
 	line-height: 1;
 }
-
-ol, ul
-{
+ol, ul {
 	list-style: none;
 }
-
-blockquote, q
-{
+blockquote, q {
 	quotes: none;
 }
-
 blockquote:before, blockquote:after,
-q:before, q:after
-{
+q:before, q:after {
 	content: '';
 	content: none;
 }
-
-table
-{
+table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
